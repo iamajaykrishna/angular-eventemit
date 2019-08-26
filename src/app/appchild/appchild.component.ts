@@ -1,16 +1,13 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-child',
   templateUrl: './appchild.component.html',
   styleUrls: ['./appchild.component.css']
 })
-export class AppchildComponent implements OnInit {
+export class AppchildComponent {
 
   constructor() { }
-
-  ngOnInit() {
-  }
 
   @Output() valueChange = new EventEmitter();
   counter = 0;
